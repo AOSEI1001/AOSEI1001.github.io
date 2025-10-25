@@ -88,6 +88,10 @@ span{
 
 }
 
+.navbar.active{
+    display: block;
+}
+
 .navbar a:hover{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
@@ -318,7 +322,7 @@ section{
 
 .projects-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     place-items: center;
     gap: 3rem;
     row-gap: 5rem;
@@ -363,4 +367,51 @@ section{
 
 .project-card p{
     font-size: 1.6rem;
+}
+
+
+@media(max-width: 1285px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius: 2rem ;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+
+    .navbar.active{
+        display: block;
+
+    }
+
+    .gradient-btn{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+
+    .home-img img{
+        width: 30vw;
+    }
 }
