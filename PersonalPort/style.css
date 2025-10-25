@@ -6,11 +6,105 @@
     text-decoration: none;
 
     scroll-behavior: smooth;
-    font-family: fantasy;
+    font-family: Poppins;
 }
 
+:root{
+    --bg-color: #080808;
+    --secomd-bg-color: #101010;
+    --text-color: white;
+    --main-color: #ea580c;
+}
 
 html{
     font-size: 60%;
     overflow: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 15%;
+    background: rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: spaace-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+#menu-icon{
+
+    font-size: 3.5rem;
+    color: var(--text-color);
+
+    font-weight: 800;
+    cursor: pointer;
+
+    transition: 0.3 ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+span{
+    background: linear-gradient(
+        270deg,
+        pink 10%,
+        #ff1d15 100%
+
+    );
+}
+
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var (--main-color);
+}
+
+.gradient-btn{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+
+     background: linear-gradient(
+        270deg,
+        pink 10%,
+        #ff1d15 100%
+
+    );
+
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+
+}
+
+.gradient-btn:hover{
+    transform: scale(1.05);
 }
