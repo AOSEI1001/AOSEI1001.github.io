@@ -6,3 +6,5 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+// document.querySelectorAll('.navbar a').forEach()
