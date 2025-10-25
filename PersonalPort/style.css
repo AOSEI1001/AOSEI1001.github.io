@@ -6,7 +6,7 @@
     text-decoration: none;
 
     scroll-behavior: smooth;
-    font-family: Poppins;
+    font-family: "Poppins";
 }
 
 :root{
@@ -18,7 +18,7 @@
 
 html{
     font-size: 60%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -39,19 +39,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 
 #menu-icon{
 
     font-size: 3.5rem;
-    color: var(--text-color);
+    color: var(--main-color);
+    display: none;
 
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
 
-    transition: 0.3 ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .logo:hover{
@@ -62,9 +68,12 @@ span{
     background: linear-gradient(
         270deg,
         pink 10%,
-        #ff1d15 100%
+        #ea580c 100%
 
     );
+
+    background-clip: text;
+    color:transparent;
 }
 
 
@@ -91,7 +100,7 @@ span{
      background: linear-gradient(
         270deg,
         pink 10%,
-        #ff1d15 100%
+        #ea580c 100%
 
     );
 
@@ -152,19 +161,19 @@ section{
 
 /* 
 
-.home-img: img{
+.home-img img{
 
-width: 32 vw;
-border-radius: 50%
+width: 32vw;
+border-radius: 50%;
 box-shadow: 0 0 25px var(--main-color);
 transition: 0.4s ease-in-out;
 
 }
 
 .home-img img:hover {
-    box-shadow: 0 0 25 px var(--main-color),
-    box-shadow: 0 0 50 px var(--main-color),
-    box-shadow: 0 0 100 px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+     0 0 50px var(--main-color),
+     0 0 100px var(--main-color);
 
 }
  */
@@ -186,6 +195,6 @@ transition: 0.4s ease-in-out;
 .social-icons a:hover{
     color: var(--text-color);
     background-color: var(--main-color);
-    transform: scale(1.2)translate(-5px);
+    transform: scale(1.2) translate(-5px);
     box-shadow: 0 0 25px var(--main-color);
 }
