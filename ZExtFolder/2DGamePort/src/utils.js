@@ -20,7 +20,7 @@ export function displayDialogue(text, onDisplayEnd){
         }
 
         clearInterval(intervalRef);
-    }, 5);
+    }, 1);
 
 
     const closeBtn = document.getElementById("close");
